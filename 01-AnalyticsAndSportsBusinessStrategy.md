@@ -37,9 +37,9 @@ Strategy is also about communication. This can't be stressed enough. If you want
 
 From an academic standpoint, there are lot's of strategic frameworks. Harvard's Michael Porter descried firms as "a collection of activities that are performed to design, produce, market, deliver, and support products." [@Keller2003] That is exactly what we are doing, but our product represents something more complex than a simple good or service. His most famous contribution to business strategy is likely "Porter's five forces." ^[https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis] What is interesting about this framework is that on the surface it doesn't appear imminently useful to a sports team. Where it does come in useful is when thinking about strategic problems such as _What Point-Of-Sale system should we use throughout our venue?_. In that case, this model can be used to consider who you might select based on those market forces. Will there be consolidation, what does that mean, what is our most powerful position in terms of negotiating? If the product is a commodity, the vendor will have to compete on price. Perhaps they are interested in marketing and are candidates for a sponsorship. Maybe you could purchase the company. It's the classic strategy problem: "Build, Buy, or Lease." You can get creative. 
 
-If you have ever messed around in the stock market you'll here a lot of talk about _fundamentals_. The type of analysis you might find on a trading platform is the illusion of analysis. Applying techniques like _triple exponential smoothing_^[https://en.wikipedia.org/wiki/Exponential_smoothing] or _moving averages_ to stocks looks great, but it probably doesn't matter. Does it make a novice a better trader? It might make them worse. Analysis is great if you understand it. It is contextual. If you don't understand the context it can be misleading or damaging. Data is not the solution or perhaps it is. It depends. Keep that in mind and think critically about the problems we are going to cover. The mechanical part of analysis isn't the important part of it. It should be a commodity. Focus on the application and communication.
+If you have ever messed around in the stock market you'll hear a lot of talk about _fundamentals_. The type of analysis you might find on a trading platform is the illusion of analysis. Applying techniques like _triple exponential smoothing_^[https://en.wikipedia.org/wiki/Exponential_smoothing] or _moving averages_ to stocks looks great, but it probably doesn't matter. Does it make a novice a better trader? It might make them worse. Analysis is great if you understand it. It is contextual. If you don't understand the context it can be misleading or damaging. Data is not the solution or perhaps it is. It depends. Keep that in mind and think critically about the problems we are going to cover. The mechanical part of analysis isn't the important part of it. It should be a commodity. Focus on the application and communication.
 
-## Technologies place in strategy and analytics
+## Technology's place in strategy and analytics
 
 I consider the application of technology in analytics along five ordered dimensions. While you can jump around to a degree, each step is generally built on the step below it. As you ascend the steps, execution tends to become more difficult and complex. Execution is where your strategy will fall apart. Read that last sentence again. Additionally, your strategy should flow from the top down. This means you keep your destination in mind as you move up each of your steps. 
 
@@ -247,7 +247,7 @@ You can think of a _fact_ as something that will be aggregated. It is a number. 
 <p class="caption">(\#fig:chonedatafanddim)Business Intelligence data structure</p>
 </div>
 
-These tables don't look much different than what you saw in figure \@ref(fig:chonedatacrm). The main difference is conceptual. In the earlier diagram no tables were necessarily prioritized over others. You might look at the tables and consider the customer as the central table with features radiating out from that specific customer. The customer has a rep, purchases tickets, may have a plan, etc. In this diagram the _Ticket_ is central. Since B.I. tools are at heart aggregation machines, this structure is extremely important. If you want to perform some math on a feature such as ticket price, you put it in the fact table. This allows you to perfromantly answer all kinds of questions such as:
+These tables don't look much different than what you saw in figure \@ref(fig:chonedatacrm). The main difference is conceptual. In the earlier diagram no tables were necessarily prioritized over others. You might look at the tables and consider the customer as the central table with features radiating out from that specific customer. The customer has a rep, purchases tickets, may have a plan, etc. In this diagram the _Ticket_ is central. Since B.I. tools are at heart aggregation machines, this structure is extremely important. If you want to perform some math on a feature such as ticket price, you put it in the fact table. This allows you to performantly answer all kinds of questions such as:
 
 - How much did customer A spend on tickets in 2018?
 - How much was spend on tickets in 2021?
@@ -336,7 +336,7 @@ That is as deep as I want to go here. We are going to use this tool a lot in sub
 
 #### Machine Learning
 
-Machine learning is a little different as a concept, but under the hood it is just statistics. This has been explained in many ways. At it's heart, we are looking for patterns in data to make predictions. Also, don't worry about A.I. taking you job. Worry about the person that knows how to use it taking you job. 
+Machine learning is a little different as a concept, but under the hood it is just statistics. This has been explained in many ways. At it's heart, we are looking for patterns in data to make predictions. Also, don't worry about A.I. taking your job. Worry about the person that knows how to use it taking your job. 
 
 There are three main types of machine learning:
 
@@ -437,7 +437,7 @@ This is machine learning at its most simple form. A set of cascading questions s
 
 ### Automation and Integration
 
-After you have developed some basic B.I. and analytics capabilities you'll quickly want to find ways to put them to work. Ad hoc analytics has it's place, but to truly reap the rewards of your work you are going to need build a engine that allows you to automate some of the story telling. This is where analytics intersects I.T. work. operationalizing your analytics procedures requires a little different knowledge set. There are also different approaches.
+After you have developed some basic B.I. and analytics capabilities you'll quickly want to find ways to put them to work. Ad hoc analytics has it's place, but to truly reap the rewards of your work you are going to need to build a engine that allows you to automate some of the story telling. This is where analytics intersects I.T. work. Operationalizing your analytics procedures requires a little different knowledge set. There are also different approaches.
 
 AWS and Google have taken huge strides in building frameworks that natively integrate analytics into your DBMS. Gone are the days of writing SQL wrappers for some R or python script sitting on some server in the basement. Let's take the same simple approach to explaining what I mean here. 
 
@@ -459,7 +459,7 @@ Integration refers to two elements:
 Interestingly, integrating with third parties is the easy part. Integrating solutions internally is much more difficult. This typically requires change management and a sponsor in the upper levels of management. 
 
 
-Figure \@ref(fig:dataautomation) demonstrates a simplified version of the entire process from data sources all the way to the feedback loop you are creating with your marketing channel partners. When we refer to marketing channel partners, we could be referring to Google's add network, Facebook, or many others. 
+Figure \@ref(fig:dataautomation) demonstrates a simplified version of the entire process from data sources all the way to the feedback loop you are creating with your marketing channel partners. When we refer to marketing channel partners, we could be referring to Google's ad network, Facebook, or many others. 
 
 
 <div class="figure" style="text-align: center">
@@ -555,7 +555,7 @@ Sports fandom is irrational. This irrationality can make sports challenging and 
 
 > "We have the ability (Under special conditions) to trancend self-interest and lose ourselves (temporarily and ecstatically) in something larger than ourselves."
 >
->--- Johnathan Haidt, "The Riteous Mind"
+>--- Johnathan Haidt, "The Righteous Mind"
 
 This is an interesting quote from "The Righteous Mind" [@Haidt2012]. Humans are programmed to participate in groups. Maybe some people buy tickets because they are lonely, or bored. If these mechanisms such as the "need to belong" are driving some sports fandom, perhaps they can be manipulated. Perhaps they are being manipulated. Ultimately, there are many reasons why someone might buy tickets to a sporting event:
 
@@ -577,7 +577,7 @@ This side of sports marketing is often overlooked and under-served. Behavioral e
 
 This chapter explains some rationale for how to approach analytics and strategy at an organizational level. Strategy is a broad term and could include many elements such as business development and hedging strategies. We focused on analytics strategy and covered a few main points related to our analytics hierarchy:
 
-1. Technologies integral relationship to analytics
+1. Technology's integral relationship to analytics
 2. Basic SQL data structures and the importance of data integrity
 3. Business Intelligence 
 4. Analytics 
