@@ -24,7 +24,7 @@ This chapter will introduce you to some R code. Ultimately, it doesn't matter wh
 1. If your analysis is done in code each step is readily reproducible and documented
 2. R is free, easy to use, has a large user base, and has a great IDE 
 3. R is massively extensible for smaller-scaled tasks
-4. It is a great tool for protyping something you might put into production in a more perfomant enviornment
+4. It is a great tool for protyping something you might put into production in a more performant enviornment
 
 I have found that it is best to get good at one tool and to stick with it. However, I say this with a note of caution. Let's consider a quote from a horrifying poem called "The Second Coming."
 
@@ -38,7 +38,7 @@ R is relatively simplistic on the outside relative to many other languages. It h
 
 Additionally, I recommend using code instead of a point-and-click tool. Code demonstrates exactly what you have done and is easy to communicate to anyone with a knowledge of the language. It will make your life easier even if it makes it more difficult in the beginning. The best thing about R is that there has been a huge user base over the years and there are many resources that you can leverage to learn what it can do. Ultimately, the decision on what tool to use needs to be driven by what you want to get out it. Are you prototyping or do you need to operationalize your code? Are you dealing with huge datasets? Do you want something built for speed or comfort? I am not going to cover anything about the language in this book. There are just too many resources available that will do a better job than me. Here are my basic recommendations if you would like to use R:
 
-1. Get and IDE that you like. RStudio is currently the best choice for R by a wide margin.
+1. Get an IDE that you like. RStudio is currently the best choice for R by a wide margin.
 2. Download R [@R-base].^[https://posit.co/download/rstudio-desktop/] It works on all major platforms and use your favorite search engine to find some free classes on how to use it. There are hundreds of how-tos available online. You can also purchase many books that will teach you how the language works. My favorite is "Advanced R" [@Wickham2014] and I highly recommend it as a must-have reference book. 
 3. Practice it! It doesn't take long to get over-the-hump in terms of getting some functional fluency. I consider it similar to playing an instrument. "Flight of the bumblebee" ^[Flight of the Bumblebee by Rimsky-Korsakov, 1900. If you aren't familiar with this song, look it up] doesn't need to be the first song that you learn on piano. Start simple and build on your knowledge. You will eventually develop an intuitive understanding of what your tool can do. 
 
@@ -47,7 +47,7 @@ It is also important to consider that R does have some drawbacks.
 1. A language won't tell you what you should do. It only provides methods to execute functions. You still need to understand how to approach and solve your problem. R won't help you there unlike statistical tools such as Minitab^[https://www.minitab.com/en-us/].
 2. R can be relatively slow if you don't use it correctly. This has to do with how it was constructed ^[R was constructed by Mathematicians and not computer scientists. It was created to be easy, not fast.]. However, there are ways to speed it up significantly. Rcpp [@R-Rcpp] is an almost seamless api to C++ that will allow you to build and leverage C++ functions in your R environment. It is a highly leveraged and important tool in R world. 
 3. R may not be the best choice for putting something into operation. Many people prototype with R and then leverage another tool to put the work to use. However, there are some great tools for smaller scale web deployments built on the _Shiny_ framework. 
-4. It's user base may decline in favor of other tools. Python has become more popular in recent years. Languages tend to benefit from network effects where the more users that it has, the more features that are built for it. User-base size is very important.
+4. Its user base may decline in favor of other tools. Python has become more popular in recent years. Languages tend to benefit from network effects where the more users that it has, the more features that are built for it. User-base size is very important.
 
 Some of the following sections will demonstrate how the datasets for this book were created. I think that this is important to do for a couple of different reasons. 
 
@@ -58,7 +58,7 @@ One other comment I want to make is on coding in-general. It is easier to write 
 
 These data sets and the code used to create them are available in the R package `FOSBAAS` and are publicly available, so there is no reason to type any of the following sections, but suit yourself. You can download a file with all of the code in this book here: https://github.com/Justin-Watkins/FOSBAAS/blob/master/FOSBAAS_code.R. 
 
-Additionally, this book will make use of many of libraries. you can run the following code to make sure that they are installed:
+Additionally, this book will make use of many of libraries. You can run the following code to make sure that they are installed:
 
 
 ```r
@@ -125,7 +125,7 @@ f_linear_equation( x          = 2,
 ```
   
 
-Now we have a simple function that we can use to get the y value where x = 2, the slope of the line is 10, and the y intercept is 7. Input, process, output. You now that you have an understanding of the way a function works, you need a way to repetitively apply that function to data. You can do that in a lot of different ways. In most programming languages you'll use a `For` loop. We wrapped each folowing snippet in the `system.time()` function to demonstrate differences in the speed of each operation. 
+Now we have a simple function that we can use to get the y value where x = 2, the slope of the line is 10, and the y intercept is 7. Input, process, output. Now that you have an understanding of the way a function works, you need a way to repetitively apply that function to data. You can do that in a lot of different ways. In most programming languages you'll use a `For` loop. We wrapped each folowing snippet in the `system.time()` function to demonstrate differences in the speed of each operation. 
 
 
 ```r
