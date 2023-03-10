@@ -442,7 +442,7 @@ This graphic is a little different from the heatmap. It demonstrates the number 
 
 ## Bar plots
 
-If you want to use a pie chart, don't. Bar plots are almost always a better choice. Visualizing the relationships between area is simply easier in a bar plot. Bar plos are probably the most popular way to display data, but I find them lacking. Again, you really need to train yourself to think in distributions. Bar Plots are for counts. The basic bar plot produced by the following code can be seen in figure \@ref(fig:chthreebarexample). 
+If you want to use a pie chart, don't. Bar plots are almost always a better choice. Visualizing the relationships between area is simply easier in a bar plot. Bar plots are probably the most popular way to display data, but I find them lacking. Again, you really need to train yourself to think in distributions. Bar Plots are for counts. The basic bar plot produced by the following code can be seen in figure \@ref(fig:chthreebarexample). 
 
 
 ```r
@@ -509,7 +509,7 @@ We can see that 2022 and 2023 are almost identical and 2024 had significantly mo
 
 ## A final word on graphics
 
-Be cautious about how you represent data. We just covered the absolute rudiments or creating graphs and demonstrated some of the most commonly used instruments. Always think about the simplest way to illustrate the point that you are trying to make. Bar plots are usually fine. I like to follow a few rules when building graphs, but don't take my word for it. Many people will tell you exactly the same things.
+Be cautious about how you represent data. We just covered the absolute rudiments of creating graphs and demonstrated some of the most commonly used instruments. Always think about the simplest way to illustrate the point that you are trying to make. Bar plots are usually fine. I like to follow a few rules when building graphs, but don't take my word for it. Many people will tell you exactly the same things.
 
 1. Never use a pie chart. They are more difficult to interpret than a bar plot
 2. Don't use two Y axes. It is almost always better to use two graphs because the differences in scale or units can be confusing. 
@@ -522,9 +522,9 @@ Additionally, we didn't cover dynamic plots. R provides some interesting capabil
 
 ## Summarizing the data
 
-This section will make heavy use of an R package that we have already seen named `dplyr` [@R-dplyr]. We'll use `dplyr` because it is easy to read and is performant on most data sets that you'll encounter. We'll also reference a couple of other packages that are useful for summarizing data such as `psych` [@R-psych]. Summarizing data is often an accouterment to graphs. You don't always have to do it, but you will find yourself doing often. 
+This section will make heavy use of an R package that we have already seen named `dplyr` [@R-dplyr]. We'll use `dplyr` because it is easy to read and is performant on most data sets that you'll encounter. We'll also reference a couple of other packages that are useful for summarizing data such as `psych` [@R-psych]. Summarizing data is often an accoutrement to graphs. You don't always have to do it, but you will find yourself doing it often. 
 
-Let's create simple summary of ticket sales by the day of the week using `dplyr`.
+Let's create a simple summary of ticket sales by the day of the week using `dplyr`.
 
 
 ```r
@@ -910,7 +910,7 @@ If an interval crosses zero, it isn't significant and we can potentially disrega
 
 #### Linear Regression
 
-We'll go into regression in more detail in several later chapter.. Functionally, the output is the same as an ANOVA. 
+We'll go into regression in more detail in several later chapters. Functionally, the output is the same as an ANOVA. 
 
 
 ```r
