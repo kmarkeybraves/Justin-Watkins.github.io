@@ -429,11 +429,11 @@ cl           <- stats::kmeans(data, centers = 6)
 data$cluster <- cl$cluster
 ```
 
-This code chunk looks similar, but that isn't ussually the case. R, like Python, has thousands of packages. However, in python there tends to be one _correct_ way to do everything. It's the _Pythonic_ way. R is the wild west. Different algorithms often have different authors who approach writing the code and dealing with objects differently. Luckily, several developers in R have attempted to solve this problem through wrapper packages that work as an API to the other libraries and add additional functionality. 
+This code chunk looks similar, but that isn't usually the case. R, like Python, has thousands of packages. However, in python there tends to be one _correct_ way to do everything. It's the _Pythonic_ way. R is the wild west. Different algorithms often have different authors who approach writing the code and dealing with objects differently. Luckily, several developers in R have attempted to solve this problem through wrapper packages that work as an API to the other libraries and add additional functionality. 
 
 You can even run python from R using the `reticulate` [@R-reticulate] package. Packages such as `caret` [@R-caret], `mlr3` [@R-mlr3], and `tidymodels` [@R-tidymodels] have attempted to create a standard API to many R functions. It means that a similar approach can be taken in terms of writing and understanding the code for many functions. The trade-off is often speed. Despite this tradeoff, I think it is incredibly useful to take advantage of one of these frameworks. They make it much easier to cover all steps of the modeling process. R and Python have learned from one another. At the end of the day, pick a tool and get good at it. I prefer R, but admire python. They both have their place and it really isn't that difficult to switch between the two for data analysis. 
 
-TO end this section, the modeling process follows four discrete (often iterative) steps. We'll refer to parts of this process in the chapter \@ref(chapter5). 
+To end this section, the modeling process follows four discrete (often iterative) steps. We'll refer to parts of this process in the chapter \@ref(chapter5). 
 
 1. Evaluating your data
 2. Preparing your data
@@ -493,7 +493,7 @@ Begin by looking for the simplest solution first. Stingy, parsimonious models te
 
 > "The ticket sales manager wants to understand who are the most likely candidates in our system to purchase season tickets. They also want to understand who is most likely to spend more or to upgrade their seats."
 
-How could you approach this problem once you have gathered and the cleaned data? This sounds like a classification problem related to lead scoring. While OLS regression tends to be the best place to start and the gold standard for estimating numerical values, Logistic regression tends to be the best place to begin when trying to estimate classes. There are even special forms such as "multinominal logistic regression" [@R-nnet] that can estimate several classes, not just binary classes. 
+How could you approach this problem once you have gathered and cleaned the data? This sounds like a classification problem related to lead scoring. While OLS regression tends to be the best place to start and the gold standard for estimating numerical values, Logistic regression tends to be the best place to begin when trying to estimate classes. There are even special forms such as "multinominal logistic regression" [@R-nnet] that can estimate several classes, not just binary classes. 
 
 Over time you'll learn that specific techniques tend to work better for specific problems. Techniques may also provide almost identical results. I've found that _random forests_ and _gradient boosting_ both tend to provide similar results. While they are less interpretable, they also don't require as much rigor as regression. Regression forces you to think about all kinds of things like Heteroskedacity, Multicolinearity, Autocorrelation, etc. I always like to use multiple techniques and then compare the results. Getting more support for a conclusion is always a good thing. Unless you are dealing with huge amounts of data, there likely won't be much of a penalty for taking this route. These tools make it easy. 
 
