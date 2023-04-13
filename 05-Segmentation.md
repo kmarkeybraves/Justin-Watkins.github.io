@@ -55,7 +55,7 @@ A segmentation project is successful if you can increase the probability of maki
 - You don't have unlimited scale potential
 - Your sample sizes are going to be relatively small
 
-You can't continuously deploy tests in the way TicTok does. These projects are ad hoc in nature. They are more useful for marketers to help understand market structure within the fan base. It allows for minor tweaks that help compound the effectiveness of multiple concurrent campaigns.
+You can't continuously deploy tests in the way TikTok does. These projects are ad hoc in nature. They are more useful for marketers to help understand market structure within the fan base. It allows for minor tweaks that help compound the effectiveness of multiple concurrent campaigns.
 
 Ultimately, success should be judged based on creating testable hypotheses and using this information to alter the behavior of one or more of our segments. We could also define success more narrowly:
 
@@ -623,7 +623,7 @@ mA <-
 demo_data$age[is.na(demo_data$age)] <- mA
 ```
 
-Using averages is interesting because if you looked at the entire data set, you would find that very few know individuals are the average age. This is a known issue when designing everything from airplane cockpits to gloves. We could also simulate the distribution and randomly assign values from that distribution. However, that technique also has issues. Once again, just be aware of what you are doing and think critically about it. If you can reasonably justify an approach, it is good enough. 
+Using averages is interesting because if you looked at the entire data set, you would find that very few known individuals are the average age. This is a known issue when designing everything from airplane cockpits to gloves. We could also simulate the distribution and randomly assign values from that distribution. However, that technique also has issues. Once again, just be aware of what you are doing and think critically about it. If you can reasonably justify an approach, it is good enough. 
 
 We know that about 58% of our fans are married. How should we approach this one? Is the pattern for marriage random? Assuming that the individual is married 58% of the time if we randomly pick one, will that be more accurate than simply saying everyone is married? We can't tell here. We could pull out Bayes' theorem and devise various ways to estimate the likelihood that a person is married. Since we only deal with 2% of our data, we will use simple imputation of random guesses with a discrete probability.
 
@@ -719,7 +719,7 @@ Perfect. While you are not an expert on imputation, you now get the gist. Correc
 
 #### Discretizing our numerical variables 
 
-Many operations (such as _latent class regression_) require discreet data. There is some art to this part of the exercise. However, there are several ways to approach it. We'll do it in a couple of different ways. We'll start by creating a couple of other appropriate data structures for our segmentation methods. 
+Many operations (such as _latent class regression_) require discrete data. There is some art to this part of the exercise. However, there are several ways to approach it. We'll do it in a couple of different ways. We'll start by creating a couple of other appropriate data structures for our segmentation methods. 
 
 Let's begin by creating a new data frame to work with. We'll use data frames and tibbles interchangeably. We have yet to speak about tibbles. Tibbles are a Wickham construct for working in the tidyverse. They functionally act like data frames but have some features that generally make them a little friendlier to work with. However, specific legacy packages require data frames. This is one of the peculiarities of R that you won't find in Python. This can also be frustrating.
 
